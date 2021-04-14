@@ -1,0 +1,56 @@
+<template>
+  <article>
+    <h2>{{ article.title }}</h2>
+    <h3>{{ article.description }}</h3>
+    <nav>
+      <ul>
+        <li v-for="link of article.toc" :key="link.id">
+          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+        </li>
+      </ul>
+    </nav>
+    <img :src="article.img" :alt="article.alt">
+    <nuxt-content :document="article" />
+    <p>Post last updated at: {{ formatDate(article.updatedAt) }}</p>
+    {{ article.toc }}
+  </article>
+</template>
+
+<script>
+export default {
+  async asyncData ({ $content, params }) {
+    // fetch our article here
+    const article = await $content('articles', params.slug).fetch()
+
+    return { article }
+  },
+  methods: {
+    formatDate (date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
+  }
+}
+</script>
+
+<style>
+  .nuxt-content h2 {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .nuxt-content h3 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .nuxt-content p {
+    margin-bottom: 20px;
+  }
+
+  .icon.icon-link {
+  background-image: url('~assets/svg/icon-hashtag.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+</style>
