@@ -5,7 +5,7 @@
       <ul class="navigation--list">
         <li class="navigation--list-item">
           <nuxt-link to="/">
-           Home
+            Home
           </nuxt-link>
         </li>
         <li>
@@ -13,9 +13,13 @@
             Articles
           </nuxt-link>
         </li>
-        <li><a href="#">Portfolio</a></li>
-    </ul>
-  </nav>
+        <li>
+          <nuxt-link to="/portfolio">
+            Portfolio
+          </nuxt-link>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 

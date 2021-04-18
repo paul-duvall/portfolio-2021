@@ -4,9 +4,10 @@
     <h1>Articles</h1>
     <ul>
       <li v-for="article in articles" :key="article.slug">
-        <div>
+        <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <h2>{{ article.title }}</h2>
-        </div>
+          <p>{{ article.description }}</p>
+        </nuxtLink>
       </li>
     </ul>
   </div>

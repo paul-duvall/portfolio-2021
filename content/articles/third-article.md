@@ -1,5 +1,5 @@
 ---
-title: A second equally exciting post
+title: Third article
 description: Cool new stuff I learnt
 img: first-blog-post.jpg
 alt: my second blog
@@ -7,7 +7,7 @@ alt: my second blog
 
 # My second blog post
 
-Oh hi! Welcome to my secpmd blog post.
+Welcome to my secpmd blog post.
 
 ## The first bit
 
