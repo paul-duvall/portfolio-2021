@@ -1,6 +1,5 @@
 <template>
   <div>
-    <AppNav />
     <h1>Articles</h1>
     <ul>
       <li v-for="article in articles" :key="article.slug">
@@ -14,11 +13,10 @@
 </template>
 
 <script>
-import AppNav from '../../components/AppNav'
-
 export default {
-  components: {
-    AppNav
+  transition: {
+    name: 'fade-in',
+    mode: 'out-in'
   },
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')

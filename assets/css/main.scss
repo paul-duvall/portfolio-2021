@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Londrina+Solid:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Sketch&display=swap');
+
+@import 'base/variables';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Font-size set to 62.5% because that is the result of 10/16 (10 pixels is what we want, 16 is the standard root font size in most browsers). I.e. this defines what 1rem is */
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    background-color: $color-dark;
+}
+
+h1, h2 {
+    font-family: 'Londrina Outline', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 9rem;
+    color: $color-light;
+}
+
+h2 {
+    font-size: 7rem;
+    color: $color-light-2;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.colour--accent {
+    color: $color-accent;
+    font-family: 'Londrina Outline', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+// transitions
+
+.fade-in-enter {
+  opacity: 0;
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-in-leave-to {
+  opacity: 0;
+}
