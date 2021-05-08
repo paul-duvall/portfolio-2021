@@ -1,0 +1,22 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Font-size set to 62.5% because that is the result of 10/16 (10 pixels is what we want, 16 is the standard root font size in most browsers). I.e. this defines what 1rem is */
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    background-color: $color-dark;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem;
+}

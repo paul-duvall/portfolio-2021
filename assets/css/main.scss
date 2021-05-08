@@ -1,50 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Londrina+Solid:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Sketch&display=swap');
 
+@import 'base/base';
+@import 'base/typography';
 @import 'base/variables';
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+.main-container {
+  margin: 0 auto;
+  max-width: 145rem;
 }
 
-/* Font-size set to 62.5% because that is the result of 10/16 (10 pixels is what we want, 16 is the standard root font size in most browsers). I.e. this defines what 1rem is */
-html {
-    font-size: 62.5%; // 1rem = 10px
-}
+// AppNav
 
-body {
-    box-sizing: border-box;
-    padding: 3rem;
-    background-color: $color-dark;
-}
+.nav {
+  &-container {
+    @media (min-width: 700px) {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 4rem;
+    }
+  }
 
-h1, h2 {
+  &-logo {
     font-family: 'Londrina Sketch', Arial, Helvetica, sans-serif;
+    font-size: 5rem;
     font-weight: 400;
-}
+    color: white;
+  }
 
-h1 {
-    font-size: 9rem;
-    color: $color-light;
-}
-
-h2 {
-    font-size: 7rem;
-    color: $color-light-2;
-}
-
-p {
-    font-size: 2rem;
-}
-
-.colour--accent {
+  &-logo-dot {
     color: $color-accent;
-    font-family: 'Londrina Outline', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+  }
+}
+
+.nav-navigation {
+  &--list {
+    @media (min-width: 700px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    li {
+      margin-left: 10rem;
+    }
+  }
+
+  &--list-item {
+    font-size: 2rem;
+    list-style: none;
+  }
+
+  &--list-link {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+// Homepage
+
+.homepage--banner-content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.homepage--banner-content-left {
+  @media (min-width: 700px) {
+    min-width: 45rem;
+  }
+}
+
+.homepage--banner-content-right {
+  max-width: 40rem;
+  
+  @media (min-width: 900px) {
+    max-width: 60rem;
+    padding-left: 2rem;
+  }
+}
+
+.homepage--title {
+  &__primary-container {
+    line-height: 7.5rem;
+
+    @media (min-width: 700px) {
+      line-height: 10rem;
+    }
+  }
+
+  &__secondary-container {
+    line-height: 5.5rem;
+
+    @media (min-width: 700px) {
+      line-height: 8rem;
+    }
+  }
+}
+
+// Other stuff
+
+.nuxt-link-exact-active {
+  border-bottom: 2px solid $color-accent;
 }
 
 // transitions
@@ -60,4 +123,14 @@ p {
 
 .fade-in-leave-to {
   opacity: 0;
+}
+
+// mixins
+
+@mixin medium {
+  @media (min-width: 700px) { @content; }
+}
+
+@mixin large {
+  @media (min-width: 1200px) { @content; }
 }

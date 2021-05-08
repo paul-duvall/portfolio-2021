@@ -1,0 +1,47 @@
+@import 'variables';
+
+h1, h2 {
+    font-family: 'Londrina Sketch', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: $color-light;
+    font-size: 7rem;
+    margin: 2rem 0;
+
+    @media (min-width: 1000px) {
+      font-size: 8rem;
+      margin: 5rem 0;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 9rem;
+        margin: 5rem 0;
+      }
+}
+
+h2 {
+    color: $color-light-2;
+    font-size: 4.5rem;
+    margin: 1.5rem 0;
+    
+    @media (min-width: 1000px) {
+      font-size: 6rem;
+      margin: 5rem 0;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 7rem;
+        margin: 5rem 0;
+      }
+}
+
+p {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+.colour--accent {
+    color: $color-accent;
+}
