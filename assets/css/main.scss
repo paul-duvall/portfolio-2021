@@ -4,6 +4,7 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/variables';
+@import 'components/components';
 
 .main-container {
   margin: 0 auto;
@@ -64,6 +65,7 @@
 .homepage--banner-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: 900px) {
     flex-direction: row;
@@ -78,7 +80,7 @@
 }
 
 .homepage--banner-content-right {
-  max-width: 40rem;
+  max-width: 60rem;
   
   @media (min-width: 900px) {
     max-width: 60rem;
@@ -101,6 +103,16 @@
     @media (min-width: 700px) {
       line-height: 8rem;
     }
+  }
+}
+
+.homepage--button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
   }
 }
 

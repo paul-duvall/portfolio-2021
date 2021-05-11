@@ -18,20 +18,37 @@
       </div>
       <!-- right -->
       <div class="homepage--banner-content-right">
-        <p class="colour--accent">I'm a self-taught web sites and applications develop, currently primarily using Vue and Laravel to build applications.</p>
-        <p>I'm a self-taught web sites and applications develop, currently primarily using Vue and Laravel to build applications. I'm a self-taught web sites and applications develop, currently primarily using Vue and Laravel to build applications.</p>
+        <p class="colour--accent">
+          I'm a self-taught developer, currently using Vue and Laravel to build applications for a small education and careers guidence organisation in Norfolk in the UK.
+        </p>
+        <p>I taught myself how to code whilst working as a supply teacher and have been in my first development position for around two years, working in a small team on a range of applications used by teachers and students.</p>
+        <p>Since I enjoy keeping up to date with development technologies, I thought I'd build this site, mainly as a home for blog posts I write and smaller projects I'm building for fun. Stay a while and feel free to say hi!</p>
       </div>
     </div>
-    <div>
-        <button>Say hello</button>
-        <button>I made this</button>
-        <button>I wrote this</button>
+    <div class="homepage--button-container">
+      <AppButton
+        button-text="Say hello"
+        route="/"
+      />
+      <AppButton
+        button-text="I made this"
+        route="/portfolio"
+      />
+      <AppButton
+        button-text="I wrote this"
+        route="/blog"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import AppButton from '../components/AppButton'
+
 export default {
+  components: {
+    AppButton
+  },
   transition: {
     name: 'fade-in',
     mode: 'out-in'

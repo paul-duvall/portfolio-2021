@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container">
     <div class="nav-logo">
-      pjd<span class="nav-logo-dot">.</span>
+        pjd<span class="nav-logo-dot">.</span>
     </div>
     <nav class="nav-navigation--container">
       <ul class="nav-navigation--list">
