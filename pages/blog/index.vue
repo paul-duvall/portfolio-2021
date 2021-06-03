@@ -31,9 +31,6 @@
               colour="greyColour"
               class="card--button"
             />
-            <!-- <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-              <p>Read more</p>
-            </nuxtLink> -->
           </div>
         </div>
       </div>

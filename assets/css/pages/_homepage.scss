@@ -10,7 +10,7 @@
   }
   
   .homepage--banner-content-left {
-    @media (min-width: 700px) {
+    @include respond(tablet) {
       min-width: 45rem;
     }
   }
@@ -27,8 +27,8 @@
   .homepage--title {
     &__primary-container {
       line-height: 7.5rem;
-  
-      @media (min-width: 700px) {
+
+      @include respond(tablet) {
         line-height: 10rem;
       }
     }
@@ -36,7 +36,7 @@
     &__secondary-container {
       line-height: 5.5rem;
   
-      @media (min-width: 700px) {
+      @include respond(tablet) {
         line-height: 8rem;
       }
     }
@@ -46,8 +46,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-  
-    @media (min-width: 700px) {
+
+    @include respond(tablet) {
       flex-direction: row;
+      margin-top: 2rem;
+    }
+
+    div {
+      margin-top: 2rem;
+
+      &:not(:first-child){
+        margin-top: 4rem;
+      }
+
+      @include respond(tablet) {
+        margin-top: 0rem;
+
+        &:not(:first-child){
+          margin-left: 7rem;
+          margin-top: 0rem;
+        }
+      }
     }
   }
