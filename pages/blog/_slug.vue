@@ -1,18 +1,18 @@
 <template>
-  <article>
-    <h2>{{ article.title }}</h2>
+  <article class="article--main-container">
+    <h1>{{ article.title }}</h1>
     <h3>{{ article.description }}</h3>
-    <nav>
+    <p>{{ formatDate(article.updatedAt) }}</p>
+    <!-- Article navigation component -->
+    <!-- <nav>
       <ul>
         <li v-for="link of article.toc" :key="link.id">
           <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
         </li>
       </ul>
-    </nav>
+    </nav> -->
     <img :src="article.img" :alt="article.alt">
     <nuxt-content :document="article" />
-    <p>Post last updated at: {{ formatDate(article.updatedAt) }}</p>
-    {{ article.toc }}
   </article>
 </template>
 

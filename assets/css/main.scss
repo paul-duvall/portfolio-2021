@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Sketch&display=swap');
 
 @import 'base/base';
+@import 'base/mixins';
 @import 'base/typography';
 @import 'base/variables';
 @import 'components/components';
@@ -10,14 +11,4 @@
 .main-container {
   margin: 0 auto;
   max-width: 145rem;
-}
-
-// mixins
-
-@mixin medium {
-  @media (min-width: 700px) { @content; }
-}
-
-@mixin large {
-  @media (min-width: 1200px) { @content; }
 }

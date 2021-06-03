@@ -1,6 +1,6 @@
 ---
 title: A second equally exciting post
-description: Cool new stuff I learnt
+description: Tailwind CSS is increasingly popular and, since I had only used Bootstrap-Vue in my work, I thought it time to try something different. If you want to try it too and want to set up a Vue project to get started in...
 img: first-blog-post.jpg
 alt: my second blog
 ---

@@ -28,15 +28,18 @@
     <div class="homepage--button-container">
       <AppButton
         button-text="Say hello"
-        route="/"
+        name=""
+        colour="greenColour"
       />
       <AppButton
         button-text="I made this"
-        route="/portfolio"
+        name="portfolio"
+        colour="greenColour"
       />
       <AppButton
         button-text="I wrote this"
-        route="/blog"
+        name="blog"
+        colour="greenColour"
       />
     </div>
   </div>

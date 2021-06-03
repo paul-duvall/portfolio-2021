@@ -1,19 +1,53 @@
 <template>
-  <div>
-    <h1>Articles</h1>
-    <ul>
-      <li v-for="article in articles" :key="article.slug">
-        <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          <h2>{{ article.title }}</h2>
-          <p>{{ article.description }}</p>
-        </nuxtLink>
-      </li>
-    </ul>
+  <div class="articles--main-container">
+    <h2>Articles</h2>
+    <div class="articles--container">
+      <div
+        v-for="article in articles"
+        :key="article.slug"
+        class="article--container"
+      >
+        <div class="card--main">
+          <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+            <img
+              class="card--background-image"
+              src="~/assets/images/articles/old-tech-smaller.jpg"
+              alt="Background image"
+            >
+          </nuxtLink>
+          <div class="card--text-area">
+            <div>
+              <h3>
+                {{ article.title }}
+              </h3>
+              <p>
+                {{ article.description }}
+              </p>
+            </div>
+            <AppButton
+              button-text="Read more"
+              name="blog-slug"
+              :slug="article.slug"
+              colour="greyColour"
+              class="card--button"
+            />
+            <!-- <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+              <p>Read more</p>
+            </nuxtLink> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import AppButton from '../../components/AppButton'
+
 export default {
+  components: {
+    AppButton
+  },
   transition: {
     name: 'fade-in',
     mode: 'out-in'

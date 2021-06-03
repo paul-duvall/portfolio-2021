@@ -1,0 +1,17 @@
+// mixins
+
+@mixin respond ($breakpoint) {
+    // $breakpoint is a variable that can have several values
+    
+      @if $breakpoint==tablet {
+        @media only screen and (min-width: 700px) {
+          @content;
+        }
+      }
+    
+      @if $breakpoint==sm-screen {
+        @media only screen and (min-width: 900px) {
+          @content;
+        }
+      }
+    }
