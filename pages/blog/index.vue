@@ -11,7 +11,7 @@
           <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
             <img
               class="card--background-image"
-              src="~/assets/images/articles/old-tech-smaller.jpg"
+              :src="'~/assets/images/articles/' + article.img"
               alt="Background image"
             >
           </nuxtLink>

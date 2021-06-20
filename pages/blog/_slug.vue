@@ -6,7 +6,6 @@
       colour="greenColour"
     />
     <h1>{{ article.title }}</h1>
-    <!-- <p class="article--description">{{ article.description }}</p> -->
     <p>{{ formatDate(article.updatedAt) }}</p>
     <!-- Article navigation component -->
     <!-- <nav>
@@ -18,6 +17,11 @@
     </nav> -->
     <img :src="require(`~/assets/images/articles/${article.img}`)" :alt="article.alt" style="width: 50rem;">
     <nuxt-content :document="article" />
+    <AppButton
+      button-text="Return to articles"
+      name="blog"
+      colour="greenColour"
+    />
   </article>
 </template>
 
