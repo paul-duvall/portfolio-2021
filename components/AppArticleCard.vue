@@ -1,11 +1,11 @@
 <template>
   <div class="card--main">
     <nuxtLink :to="{ name: 'blog-slug', params: { slug: slug } }">
-      <img
+      <!-- <img
         class="card--background-image"
         src="~/assets/images/articles/old-tech-smaller.jpg"
         alt="Background image"
-      >
+      > -->
     </nuxtLink>
     <div class="card--text-area">
       <h3 style="font-size: 16px;">

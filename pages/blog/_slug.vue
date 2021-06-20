@@ -1,7 +1,12 @@
 <template>
   <article class="article--main-container">
+    <AppButton
+      button-text="Return to articles"
+      name="blog"
+      colour="greenColour"
+    />
     <h1>{{ article.title }}</h1>
-    <h3>{{ article.description }}</h3>
+    <!-- <p class="article--description">{{ article.description }}</p> -->
     <p>{{ formatDate(article.updatedAt) }}</p>
     <!-- Article navigation component -->
     <!-- <nav>
@@ -11,7 +16,7 @@
         </li>
       </ul>
     </nav> -->
-    <img :src="article.img" :alt="article.alt">
+    <img :src="require(`~/assets/images/articles/${article.img}`)" :alt="article.alt" style="width: 50rem;">
     <nuxt-content :document="article" />
   </article>
 </template>
