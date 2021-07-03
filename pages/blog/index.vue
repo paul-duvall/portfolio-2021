@@ -8,27 +8,20 @@
         class="article--container"
       >
         <div class="card--main">
-          <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-            <img
-              class="card--background-image"
-              :src="'~/assets/images/articles/' + article.img"
-              alt="Background image"
-            >
-          </nuxtLink>
-          <div class="card--text-area">
-            <div>
+          <div>
+            <nuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
               <h3>
                 {{ article.title }}
               </h3>
-              <p>
-                {{ article.description }}
-              </p>
-            </div>
+            </nuxtLink>
+            <p>
+              {{ article.description }}
+            </p>
             <AppButton
               button-text="Read more"
               name="blog-slug"
               :slug="article.slug"
-              colour="greyColour"
+              colour="greenColour"
               class="card--button"
             />
           </div>
@@ -58,6 +51,11 @@ export default {
     return {
       articles
     }
+  },
+  mounted () {
+    this.articles.forEach((article) => {
+      article.fullImageUrl = '~/assets/images/articles/' + article.img
+    })
   }
 }
 </script>

@@ -40,14 +40,19 @@ h2 {
 h3 {
   color: #2F4F4F;
   font-family: 'Londrina Solid', Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
 }
 
 p {
-    font-size: 1.8rem;
-    line-height: 1.3;
+    font-size: 1.7rem;
+    line-height: 1.5;
     margin: 3rem 0;
+
+    @include respond(sm-screen) {
+      font-size: 1.8rem;
+      line-height: 1.7;
+    }
 }
 
 .colour--accent {

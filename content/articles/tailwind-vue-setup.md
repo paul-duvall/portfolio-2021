@@ -1,13 +1,12 @@
 ---
 title: Setting up Tailwind in your Vue project 
 description: Tailwind CSS is increasingly popular and, since I had only used Bootstrap-Vue in my work, I thought it time to try something different. If you want to try it too and want to set up a Vue project to get started in...
+intro: A speedy overview to setting up Tailwind in Vue
 img: tailwind-vue-setup.jpg
 alt: Setting up Tailwind in your Vue project 
 ---
 
 <sub><sup>Photo by <a href="https://unsplash.com/@lgtts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilse Orsel</a> on <a href="https://unsplash.com/s/photos/street-art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></sup></sub>
-  
-# Setting up Tailwind in your Vue Project
 
 **I suspect that Tailwind CSS needs no introduction. This 'utility-first, fully responsive CSS framework' is increasingly popular (the State of CSS survey suggests it experienced the greatest degree of growth of any CSS framework in 2020) and, since I had only used Bootstrap-Vue in my work, I thought it time to try something different. If you want to try it too and want to set up a Vue project to get started in, follow these instructions.**
 

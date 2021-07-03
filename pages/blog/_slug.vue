@@ -5,17 +5,12 @@
       name="blog"
       colour="greenColour"
     />
+
     <h1>{{ article.title }}</h1>
     <p>{{ formatDate(article.updatedAt) }}</p>
-    <!-- Article navigation component -->
-    <!-- <nav>
-      <ul>
-        <li v-for="link of article.toc" :key="link.id">
-          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-        </li>
-      </ul>
-    </nav> -->
-    <img :src="require(`~/assets/images/articles/${article.img}`)" :alt="article.alt" style="width: 50rem;">
+    <div>{{ article.intro }}</div>
+
+    <img class="article--top-image" :src="require(`~/assets/images/articles/${article.img}`)" :alt="article.alt">
     <nuxt-content :document="article" />
     <AppButton
       button-text="Return to articles"

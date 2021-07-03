@@ -1,11 +1,15 @@
 .article {
     &--main-container {
         margin: 0 auto;
-        max-width: 100rem;
+        max-width: 90rem;
 
         h1 {
             font-size: 5rem;
         }
+    }
+
+    &--top-image {
+        width: 100%;
     }
 }
 
