@@ -2,6 +2,10 @@
 .articles {
     &--main-container {
       text-align: center;
+
+      h2 {
+        margin-top: 0.5rem;
+      }
     }
   
     &--container {
@@ -66,29 +70,4 @@
         right: 2.5rem;
       }
     }
-  
-    // &--text-area {
-    //   background: white;
-    //   bottom: -9rem;
-    //   left: 0;
-    //   min-height: 12.5rem;
-    //   opacity: .8;
-    //   position: absolute;
-    //   transition: all ease-in .2s;
-    //   width: 100%;
-  
-    //   @include respond(sm-screen) {
-    //     margin-left: 30rem;
-    //     opacity: 1;
-    //     position: static;
-    //     width: 60%;
-    //     padding-left: 2rem;
-    //     padding-right: 2rem;
-    //   }
-
-    //   p {
-    //     color: #808080;
-    //     text-align: left;
-    //   }
-    // }
   }
