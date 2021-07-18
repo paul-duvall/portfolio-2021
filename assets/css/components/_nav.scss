@@ -32,7 +32,22 @@
       display: none;
 
       li {
-        padding-top: 2rem;
+        padding-top: 1.5rem;
+        position: relative;
+      }
+
+      li:hover:after {
+        width: 100%;
+        transition: ease-out .4s;
+      }
+
+      li::after {
+        content: "";
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        width: 2rem;
+        border-top: .3rem solid $color-accent;        
       }
 
       @include respond(tablet) {
@@ -72,15 +87,22 @@
       }
     }
 
+    &--burger:hover {
+      color: $color-accent;
+      cursor: pointer;
+    }
+
+    // Specific to the slide out burger menu
     &--slide {
       &-menu {
         background-color: $color-darker;
-        height: 75vh;
+        height: 65vh;
+        padding-left: 2rem;
         padding-top: 5rem;
         position: absolute;
         right: -3rem;
         top: -3rem;
-        width: 75vw;
+        width: 65vw;
   
         @include respond(tablet) {
           display: none;
@@ -97,6 +119,10 @@
       &-link {
         color: white;
         text-decoration: none;
+
+        &:hover {
+          color: $color-accent;
+        }
       }
     }
 
@@ -122,7 +148,7 @@
 
 // Slide in (primarily for burger menu transition)
 .slide-enter, .slide-leave-to {
-  transform: translateX(15rem);
+  transform: translateX(30rem);
 }
 
 .slide-enter-active {
