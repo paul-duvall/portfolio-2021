@@ -10,15 +10,15 @@ h1 {
     font-size: 7rem;
     margin: 2rem 0;
 
-    @media (min-width: 1000px) {
+    @include respond(tablet) {
       font-size: 8rem;
-      margin: 5rem 0;
+      margin: 3rem 0;
     }
 
-    @media (min-width: 1200px) {
-        font-size: 9rem;
-        margin: 5rem 0;
-      }
+    @include respond(sm-screen) {
+      font-size: 9rem;
+      margin: 3rem 0;
+    }
 }
 
 h2 {
@@ -26,15 +26,15 @@ h2 {
     font-size: 4.5rem;
     margin: 1.5rem 0;
     
-    @media (min-width: 1000px) {
+    @include respond(tablet) {
       font-size: 6rem;
-      margin: 5rem 0;
+      margin: 3rem 0;
     }
 
-    @media (min-width: 1200px) {
-        font-size: 7rem;
-        margin: 5rem 0;
-      }
+    @include respond(sm-screen) {
+      font-size: 7rem;
+        margin: 3rem 0;
+    }
 }
 
 h3 {

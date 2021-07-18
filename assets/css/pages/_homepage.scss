@@ -22,6 +22,10 @@
       max-width: 60rem;
       padding-left: 2rem;
     }
+
+    p {
+      margin-top: 1.5rem;
+    }
   }
   
   .homepage--title {
@@ -35,6 +39,7 @@
   
     &__secondary-container {
       line-height: 5.5rem;
+      padding: 0;
   
       @include respond(tablet) {
         line-height: 8rem;
@@ -43,13 +48,19 @@
   }
   
   .homepage--button-container {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 
     @include respond(tablet) {
       flex-direction: row;
-      margin-top: 2rem;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+
+    @include respond(tablet) {
+      justify-content: left;
     }
 
     div {

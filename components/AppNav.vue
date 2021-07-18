@@ -1,8 +1,10 @@
 <template>
   <div class="nav-container">
-    <div class="nav-logo">
-      pjd<span class="nav-logo-dot">.</span>
-    </div>
+    <nuxt-link to="/" class="nav-navigation--slide-link">
+      <div class="nav-logo">
+        pjd<span class="nav-logo-dot">.</span>
+      </div>
+    </nuxt-link>
     <nav class="nav-navigation--container">
       <button
         class="nav-navigation--burger"
