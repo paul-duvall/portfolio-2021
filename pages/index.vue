@@ -1,3 +1,7 @@
+// tasks
+// Add footer
+// Style buttons on portfolio pages
+// Sort fonts so always appear correctly
 <template>
   <div class="container">
     <div class="homepage--banner-content">

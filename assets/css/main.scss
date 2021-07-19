@@ -10,6 +10,26 @@
 @import 'pages/pages';
 
 .main-container {
+  min-height: 100vh;
   margin: 0 auto;
-  max-width: 130rem;
+  max-width: 135rem;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.footer {
+  bottom: 0;
+  color: $color-light-2;
+  font-family: 'Inter', sans-serif;
+  font-size: $font-size-small;
+  font-weight: 200;
+  padding-bottom: .8rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  a {
+    color: $color-light;
+    text-decoration: none;
+  }
 }
