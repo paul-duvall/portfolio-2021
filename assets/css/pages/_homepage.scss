@@ -1,82 +1,69 @@
-.homepage--banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    @media (min-width: 900px) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+.container {
+  @include respond(sm-screen) {
+    column-gap: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 3fr 1fr;  
   }
-  
-  .homepage--banner-content-left {
-    @include respond(tablet) {
-      min-width: 45rem;
-    }
-  }
-  
-  .homepage--banner-content-right {
+}
+
+.homepage {
+  &-intro-text > p {
+    margin-top: 1.5rem;
     max-width: 60rem;
-    
-    @media (min-width: 900px) {
-      max-width: 60rem;
-      padding-left: 2rem;
-    }
-
-    p {
-      margin-top: 1.5rem;
-    }
   }
-  
-  .homepage--title {
-    &__primary-container {
-      line-height: 7.5rem;
 
-      @include respond(tablet) {
-        line-height: 10rem;
-      }
-    }
-  
-    &__secondary-container {
-      line-height: 5.5rem;
-      padding: 0;
-  
-      @include respond(tablet) {
-        line-height: 8rem;
-      }
-    }
-  }
-  
-  .homepage--button-container {
+  &-buttons-container {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    min-height: 5rem;
+
+    & > div {
+      margin-top: 3rem;
+    }
 
     @include respond(tablet) {
       flex-direction: row;
-      justify-content: center;
-      margin-top: 4rem;
-    }
 
-    @include respond(tablet) {
-      justify-content: left;
-    }
-
-    div {
-      margin-top: 2rem;
-
-      &:not(:first-child){
-        margin-top: 4rem;
-      }
-
-      @include respond(tablet) {
-        margin-top: 0rem;
-
-        &:not(:first-child){
-          margin-left: 7rem;
-          margin-top: 0rem;
-        }
+      & > div {
+        margin-top: 0;
+        padding-left: 3rem;
       }
     }
   }
+
+  @include respond(sm-screen) {
+    &-banner-top {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  
+    &-banner-bottom {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  
+    &-intro-text {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  
+      & > p {
+        margin-top: 2.5rem;
+      }
+    }
+  
+    &-buttons-container {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+}

@@ -7,7 +7,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 4rem;
       }
     }
   
@@ -78,8 +77,8 @@
       display: block; 
       font-size: 3rem;
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 1.5rem;
+      top: 0.5rem;
       z-index: 1;
 
       @include respond(tablet) {
