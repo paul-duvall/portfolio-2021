@@ -39,19 +39,19 @@
         :class="{ 'nav-navigation--list__visible': menuIsVisible }"
       >
         <li class="nav-navigation--list-item">
-          <nuxt-link to="/" class="nav-navigation--list-link">
+          <nuxtLink to="/" class="nav-navigation--list-link">
             Home
-          </nuxt-link>
+          </nuxtLink>
         </li>
         <li class="nav-navigation--list-item">
-          <nuxt-link to="/blog" class="nav-navigation--list-link">
+          <nuxtLink to="/blog" class="nav-navigation--list-link">
             Articles
-          </nuxt-link>
+          </nuxtLink>
         </li>
         <li class="nav-navigation--list-item">
-          <nuxt-link to="/portfolio" class="nav-navigation--list-link">
+          <nuxtLink to="/portfolio" class="nav-navigation--list-link">
             Portfolio
-          </nuxt-link>
+          </nuxtLink>
         </li>
       </ul>
     </nav>
@@ -64,6 +64,11 @@ export default {
   data () {
     return {
       menuIsVisible: false
+    }
+  },
+  watch: {
+    '$route' () {
+      this.menuIsVisible = false
     }
   },
   methods: {
