@@ -14,6 +14,11 @@ export default {
   components: {
     AppFooter,
     AppNav
+  },
+  data () {
+    return {
+      isPanelOpen: false
+    }
   }
 }
 </script>
