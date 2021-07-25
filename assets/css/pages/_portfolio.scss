@@ -70,4 +70,21 @@
             width: 5rem;
         }
     }
+
+    &--card-icon {
+        margin: 0 .4rem;
+        transition: 0.2s;
+    }
+
+    &--card-icons {
+        margin-top: 1rem; 
+
+        a:visited, a:link, a:active {
+            color: $color-light;
+        }
+
+        a:hover {
+            color: $color-accent;
+        }
+    }
   }

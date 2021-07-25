@@ -12,19 +12,16 @@
 }
 
 .greyColour {
-  background: white;
   color: $color-dark;
   border-color: $color-dark;
 
   &:hover {
-    background: $color-dark;
     color: white;
     border-color: $color-dark;
   }
 }
 
 .greenColour {
-  background: $color-dark;
   color: $color-accent;
   border-color: $color-accent;
 

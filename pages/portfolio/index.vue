@@ -16,7 +16,43 @@
           <p>
             {{ project.info }}
           </p>
-          <a :href="project.url" target="_blank">View project</a>
+          <div class="projects--card-icons">
+            <a class="projects--card-icon" :href="project.url" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+            <a class="projects--card-icon" :href="project.gitUrl" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-code"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -36,31 +72,36 @@ export default {
           title: 'Lemon Tree Cafe',
           info: 'Built for a local cafe using just HTML, CSS and a little Javascript.',
           image: '/images/projects/project-lemon.jpg',
-          url: 'http://lemontreecafebar.com/'
+          url: 'http://lemontreecafebar.com/',
+          gitUrl: 'https://github.com/paul-duvall/lemon-tree'
         },
         {
           title: 'Movie Quote Quiz',
           info: 'Test your knowledge of classic movie quotes! Built with jQuery.',
           image: '/images/projects/project-quote-quiz.jpg',
-          url: 'https://quizzical-edison-7689de.netlify.com/'
+          url: 'https://quizzical-edison-7689de.netlify.com/',
+          gitUrl: 'https://github.com/paul-duvall/movie-quote-quiz'
         },
         {
           title: 'Claude\'s restaurant',
           info: 'A little bit of text about the project',
           image: '/images/projects/project-claudes.jpg',
-          url: 'https://wonderful-wilson-e250a9.netlify.app'
+          url: 'https://wonderful-wilson-e250a9.netlify.app',
+          gitUrl: 'https://github.com/paul-duvall/Claudes-restaurant'
         },
         {
           title: 'Drum Machine',
           info: 'Try out this drum machine application and lay down some sick beats! Built using React.',
           image: '/images/projects/project-drum.jpg',
-          url: 'https://codepen.io/duvallpj/full/MdGBXm'
+          url: 'https://codepen.io/duvallpj/full/MdGBXm',
+          gitUrl: 'https://codepen.io/duvallpj/pen/MdGBXm'
         },
         {
           title: 'Markdown Previewer',
           info: 'Preview text formatted using the markdown markup language. Built using React.',
           image: '/images/projects/project-markdown.jpg',
-          url: 'https://codepen.io/duvallpj/full/zQKpBY'
+          url: 'https://codepen.io/duvallpj/full/zQKpBY',
+          gitUrl: 'https://codepen.io/duvallpj/pen/zQKpBY'
         }
       ]
     }
