@@ -1,6 +1,6 @@
 ---
-title: Sass and Media Queries
-description: A breakdown of how the use of Sass features can make media queries more user-friendly...
+title: How to set up Media Queries in Sass
+description: A breakdown of how the use of various features of Sass, such as mixins, can be used to make media queries more user-friendly...
 img: sass-and-media-queries.jpg
 alt: Well-organised stationery
 ---

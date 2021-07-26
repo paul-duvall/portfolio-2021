@@ -84,7 +84,7 @@ export default {
         },
         {
           title: 'Claude\'s restaurant',
-          info: 'A little bit of text about the project',
+          info: 'Keeping it simple on this one, built with HTML and CSS, with only the smallest amount of Javascript',
           image: '/images/projects/project-claudes.jpg',
           url: 'https://wonderful-wilson-e250a9.netlify.app',
           gitUrl: 'https://github.com/paul-duvall/Claudes-restaurant'

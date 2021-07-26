@@ -38,8 +38,8 @@
       color: $color-light-2;
       margin-bottom: 2rem;
       max-width: 35rem;
-      min-height: 28rem;
-      padding: 1rem;
+      min-height: 30rem;
+      padding: 1.5rem;
       position: relative;
       text-align: left;
   
@@ -57,6 +57,11 @@
 
       a {
         text-decoration: none;
+      }
+
+      p {
+        font-size: $font-size-smaller;
+        padding-top: 1.5rem;
       }
     }
 

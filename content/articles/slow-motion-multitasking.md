@@ -1,6 +1,6 @@
 ---
 title: Slow-motion multitasking and Coding
-description: If you find yourself flitting between projects and topics, worried that your not making any forward progress and that you're incapable of focussing, worry not. It may be that you're slow-motion multi-tasking!
+description: If you find yourself flitting between projects, worried that you're not making progress and that you're incapable of focussing, worry not. It may be that you're slow-motion multi-tasking!
 img: slowmotion-multi-tasking.jpg
 alt: Slow-motion multitasking
 ---
