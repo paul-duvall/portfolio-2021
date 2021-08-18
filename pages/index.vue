@@ -1,6 +1,7 @@
 // tasks
-// Style buttons on portfolio pages
-// Sort fonts so always appear correctly
+// Animations for homepage
+// Something for 'say hello' - either a page or a modal
+// Replace the Nuxt icon in the tab
 <template>
   <div class="container">
     <!-- banner text top -->

@@ -17,7 +17,12 @@
             {{ project.info }}
           </p>
           <div class="projects--card-icons">
-            <a class="projects--card-icon" :href="project.url" target="_blank">
+            <a
+              class="projects--card-icon"
+              :href="project.url"
+              target="_blank"
+              title="View project"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -35,7 +40,12 @@
                 <line x1="10" y1="14" x2="21" y2="3" />
               </svg>
             </a>
-            <a class="projects--card-icon" :href="project.gitUrl" target="_blank">
+            <a
+              class="projects--card-icon"
+              :href="project.gitUrl"
+              target="_blank"
+              title="View code"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -68,6 +78,13 @@ export default {
   data () {
     return {
       projects: [
+        {
+          title: 'Boardgame Picker',
+          info: 'Uses an API from the website Boardgamegeek. Built using Vue and Bootstrap-Vue.',
+          image: '/images/projects/project-boardgame.jpg',
+          url: 'https://lucid-hawking-33f455.netlify.app',
+          gitUrl: 'https://github.com/paul-duvall/boardgame-picker'
+        },
         {
           title: 'Lemon Tree Cafe',
           info: 'Built for a local cafe using just HTML, CSS and a little Javascript.',
